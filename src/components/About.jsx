@@ -30,14 +30,14 @@ function About() {
           }}>
             Hi, I'm Nardos Berhane a 23-year-old model from Addis Ababa, Ethiopia. Modeling has always been more than just a profession for me, it's a creative outlet and a way to express different sides of myself.
           </p>
-          <p style={{ 
-            fontSize: 'clamp(1rem, 3vw, 1.15rem)', 
-            color: '#555', 
+        <p style={{ 
+          fontSize: 'clamp(1rem, 3vw, 1.15rem)', 
+          color: '#555', 
             lineHeight: 1.8,
             marginBottom: '1rem'
-          }}>
+        }}>
             I've had the privilege of traveling for shoots and working across various styles, including TV and social media commercials, fitness modeling, and lifestyle campaigns. Each project is a new opportunity to connect with a vision and bring it to life with energy and intention. I'm passionate about exploring both the creative and professional sides of modeling, bringing concepts to life, working with visionary teams, and continuing to grow through every experience the industry brings my way.
-          </p>
+        </p>
         </div>
         <div style={{ 
           display: 'grid', 

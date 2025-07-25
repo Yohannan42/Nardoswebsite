@@ -103,9 +103,9 @@ function Contact() {
                 borderRadius: '8px',
                 marginBottom: '16px'
               }}>
-                <input 
-                  value={portfolioUrl}
-                  readOnly
+              <input 
+                value={portfolioUrl}
+                readOnly
                   style={{ 
                     flex: 1,
                     padding: '8px',
@@ -114,7 +114,7 @@ function Contact() {
                     fontSize: '0.95rem',
                     color: '#444'
                   }}
-                />
+              />
                 <button 
                   onClick={handleCopy} 
                   style={{ 
