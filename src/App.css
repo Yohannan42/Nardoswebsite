@@ -1,0 +1,195 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.portfolio-container {
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 2rem;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.portfolio-container h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.portfolio-container ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.portfolio-container li {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+  
+  /* Navigation mobile styles */
+  nav {
+    padding: 1rem !important;
+  }
+  
+  /* Hide desktop menu on mobile */
+  nav > div:not(:first-child) {
+    display: none !important;
+  }
+  
+  /* Show hamburger menu on mobile */
+  nav button {
+    display: block !important;
+  }
+  
+  /* Mobile menu overlay */
+  .mobile-menu-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: rgba(0,0,0,0.8) !important;
+    z-index: 1001 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  /* Portfolio grid adjustments */
+  .portfolio-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  /* About section grid */
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+  
+  /* Work experience cards */
+  .experience-card {
+    padding: 1.5rem !important;
+  }
+  
+  /* Contact form */
+  .contact-form {
+    padding: 1.5rem !important;
+  }
+  
+  /* Buttons */
+  button, a[href] {
+    padding: 0.8rem 1.5rem !important;
+    font-size: 1rem !important;
+  }
+  
+  /* Text sizes */
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  h2 {
+    font-size: 2rem !important;
+  }
+  
+  p {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    padding: 0.5rem;
+  }
+  
+  /* Single column for very small screens */
+  .about-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Smaller text for very small screens */
+  h1 {
+    font-size: 2rem !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  /* Compact spacing */
+  section {
+    padding: 2rem 0 !important;
+  }
+  
+  .container {
+    padding: 0 1rem !important;
+  }
+}
+
+/* Touch-friendly buttons */
+button, a[href] {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* Better focus states for accessibility */
+button:focus, a:focus {
+  outline: 2px solid #bfa14a;
+  outline-offset: 2px;
+}
