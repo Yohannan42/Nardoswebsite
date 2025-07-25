@@ -25,9 +25,15 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Set up Node
+<<<<<<< HEAD
         uses: actions/setup-node@v3
         with:
           node-version: 18
+=======
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+>>>>>>> dc3a4a5 (Fix GitHub Actions workflow with updated action versions)
           cache: 'npm'
       
       - name: Install dependencies
@@ -37,6 +43,7 @@ jobs:
         run: npm run build
       
       - name: Setup Pages
+<<<<<<< HEAD
         uses: actions/configure-pages@v3
       
       - name: Upload artifact
@@ -47,3 +54,15 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+=======
+        uses: actions/configure-pages@v4
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 
+>>>>>>> dc3a4a5 (Fix GitHub Actions workflow with updated action versions)
